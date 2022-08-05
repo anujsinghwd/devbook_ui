@@ -13,6 +13,7 @@ import AppAppbar from "./modules/views/AppAppbar";
 import AppFooter from "./modules/views/AppFooter";
 import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
+import Home from "./Pages/Home";
 
 import "./App.css";
 
@@ -22,12 +23,13 @@ function App() {
     <Provider store={store}>
       <BrowserRouter>
         {/* <div> */}
-          <AppAppbar />
-          <Routes>
-            <Route exact path="/login" element={<SignIn />} />
-            <Route exact path="/register" element={<SignUp />} />
-          </Routes>
-          <AppFooter />
+        <AppAppbar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/login" element={<SignIn />} />
+          <Route exact path="/register" element={<SignUp />} />
+        </Routes>
+        <AppFooter />
         {/* </div> */}
       </BrowserRouter>
     </Provider>

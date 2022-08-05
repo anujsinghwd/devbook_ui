@@ -15,7 +15,7 @@ function AppAppBar() {
     <div>
       <AppBar position="fixed">
         <Toolbar sx={{ justifyContent: 'space-between' }}>
-          <Box sx={{ flex: 1 }} />
+          <Box sx={{ flex: 1}} />
           <Link
             variant="h6"
             underline="none"
@@ -25,7 +25,7 @@ function AppAppBar() {
           >
             {'devbook'}
           </Link>
-          <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
+          {/* <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
             <Link
               color="inherit"
               variant="h6"
@@ -43,7 +43,8 @@ function AppAppBar() {
             >
               {'Sign Up'}
             </Link>
-          </Box>
+          </Box> */}
+          <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}></Box>
         </Toolbar>
       </AppBar>
       <Toolbar />
